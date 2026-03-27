@@ -1,0 +1,12 @@
+{
+  "name": "verosight",
+  "description": "Social media intelligence API — search posts, analyze sentiment, track trends, and compare profiles across X, Instagram, TikTok, Facebook, LinkedIn, YouTube, and news portals.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Verosight",
+    "url": "https://verosight.com"
+  },
+  "repository": "https://github.com/volantis-technology/verosight-claude-plugin",
+  "homepage": "https://verosight.com/docs#mcp",
+  "license": "MIT"
+}
