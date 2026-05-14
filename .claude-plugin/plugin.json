@@ -1,7 +1,7 @@
 {
   "name": "verosight",
-  "description": "Social media intelligence API — search posts, analyze sentiment, track trends, and compare profiles across X, Instagram, TikTok, Facebook, LinkedIn, YouTube, and news portals.",
-  "version": "1.0.0",
+  "description": "Social media intelligence API — search posts, analyze sentiment, track trends, find experts, get recommendations, and compare profiles across X, Instagram, TikTok, Facebook, LinkedIn, YouTube, and news portals. Supports semantic keyword filtering for topic-specific analytics.",
+  "version": "2.0.0",
   "author": {
     "name": "Verosight",
     "url": "https://verosight.com"

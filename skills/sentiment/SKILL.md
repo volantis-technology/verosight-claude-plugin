@@ -28,6 +28,8 @@ curl -s "https://api.verosight.com/v1/analytics/sentiment?query=TOPIC&days=7" \
 - `query` — required, the search term
 - `days` — period 1-90 (default 7)
 - `platform` — filter by platform
+- `exclude_profiles` — comma-separated profiles to exclude
+- `exclude_keywords` — comma-separated keywords to exclude
 
 Parse the user's request:
 - "sentiment on iran" → query=iran

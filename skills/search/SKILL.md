@@ -33,6 +33,8 @@ curl -s "https://api.verosight.com/v1/posts?keyword=$QUERY&limit=10" \
 - `sort` — posted_at, like_count, comment_count
 - `order` — desc (default), asc
 - `limit` — 1-100 (default 20)
+- `exclude_profiles` — comma-separated profiles to exclude from results
+- `exclude_keywords` — comma-separated keywords to exclude from results
 
 Parse the user's natural language request to determine which parameters to use. For example:
 - "posts about AI from last week" → keyword=AI, date_from=7 days ago

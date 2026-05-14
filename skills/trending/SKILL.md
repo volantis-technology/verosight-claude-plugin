@@ -28,11 +28,15 @@ curl -s "https://api.verosight.com/v1/analytics/trending?days=7&limit=10" \
 - `days` — period 1-90 (default 7)
 - `limit` — max results (default 20)
 - `platform` — filter: x, instagram, tiktok, etc.
+- `keyword` — optional, filter by topic (e.g. "politics", "AI")
+- `exclude_profiles` — comma-separated profiles to exclude
+- `exclude_keywords` — comma-separated keywords to exclude
 
 Parse the user's request:
 - "trending on tiktok" → platform=tiktok
 - "trending this month" → days=30
 - "top 5 trending" → limit=5
+- "trending about AI on twitter" → keyword=AI, platform=x
 
 ## Output Format
 
