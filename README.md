@@ -1,24 +1,32 @@
-# Verosight Claude Code Plugin
+# Verosight Plugin Marketplace
 
-Social media intelligence at your fingertips. Search posts, analyze sentiment, track trends, find experts, get AI recommendations, and compare profiles across X, Instagram, TikTok, Facebook, LinkedIn, YouTube, and news portals — all from Claude Code.
+Social media intelligence for Claude Code. Search posts, analyze sentiment, track trends, find experts, get AI recommendations, and compare profiles across X, Instagram, TikTok, Facebook, LinkedIn, YouTube, and news portals.
 
 ## Install
 
+**Add the marketplace:**
 ```bash
-claude /plugin install https://github.com/volantis-technology/verosight-claude-plugin
+claude plugin marketplace add volantis-technology/verosight-claude-plugin
 ```
 
-## Setup
+**Install the plugin:**
+```bash
+claude plugin install verosight@verosight-marketplace
+```
 
-1. Get a free API key at [verosight.com/register](https://verosight.com/register) (1,000 free credits)
-2. Set your key: `export VEROSIGHT_API_KEY=vlt_live_YOUR_KEY`
-3. Run `/verosight:setup` to verify
+Or from within Claude Code:
+```
+/plugin marketplace add volantis-technology/verosight-claude-plugin
+/plugin install verosight@verosight-marketplace
+```
+
+When you enable the plugin, you'll be prompted for your API key. Get one free at [verosight.com/register](https://verosight.com/register) (1,000 free credits).
 
 ## Skills
 
-| Command | Description | Credits |
-|---------|-------------|---------|
-| `/verosight:setup` | Configure API key and verify access | free |
+| Skill | Description | Credits |
+|-------|-------------|---------|
+| `/verosight:setup` | Verify API access | free |
 | `/verosight:search <query>` | Search posts across platforms | 2 |
 | `/verosight:trending [platform]` | Get trending content | 5 |
 | `/verosight:sentiment <topic>` | Analyze public sentiment | 5 |
@@ -28,7 +36,7 @@ claude /plugin install https://github.com/volantis-technology/verosight-claude-p
 | `/verosight:mentions [keyword]` | Most-mentioned profiles | 3 |
 | `/verosight:best-time [platform]` | Best posting times for engagement | 3 |
 | `/verosight:engagement [platform]` | Rank profiles by engagement | 5 |
-| `/verosight:growth <platform> <profile>` | Track follower growth over time | 3 |
+| `/verosight:growth <platform> <profile>` | Track follower growth | 3 |
 | `/verosight:experts <query>` | Find topic experts by authority | 5 |
 | `/verosight:profile <platform> <name>` | Get profile details and stats | 5 |
 | `/verosight:compare <p1> vs <p2>` | Compare profile engagement | 5 |
@@ -59,21 +67,16 @@ claude /plugin install https://github.com/volantis-technology/verosight-claude-p
 
 ## Semantic Keyword Filtering
 
-Several analytics skills support **keyword-based semantic search** — just add a topic and the API uses AI embeddings to find relevant posts before aggregating metrics:
+Several analytics skills support **keyword-based semantic search** — add a topic and the API uses AI embeddings to find relevant posts before aggregating:
 
-- `/verosight:sentiment-trend politics` — daily sentiment trend filtered to politics-related posts
-- `/verosight:best-time technology on x` — best posting times specifically for tech content
+- `/verosight:sentiment-trend politics` — daily sentiment trend filtered to politics
+- `/verosight:best-time technology on x` — best posting times for tech content
 - `/verosight:hashtags AI` — hashtags most associated with AI conversations
 - `/verosight:mentions crypto` — who gets mentioned most in crypto discussions
 
 ## Recommendation Categories
 
-The `/verosight:recommendations` skill supports these categories:
 `products`, `movies`, `books`, `software`, `games`, `travel`, `skills`, `content`, `marketing`, `problems`
-
-## Credits
-
-Free accounts start with 1,000 credits. [Purchase more](https://verosight.com/dashboard/billing).
 
 ## Alternative: MCP Server
 
