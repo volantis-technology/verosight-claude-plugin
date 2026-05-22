@@ -20,6 +20,7 @@ curl -s "https://api.verosight.com/v1/analytics/sentiment?query=TOPIC&days=7" \
 - `query` — required, the search term
 - `days` — period 1-90 (default 7)
 - `platform` — filter by platform
+- `media_type` — filter: image, video, text, article (photo is alias for image)
 - `exclude_profiles` — comma-separated profiles to exclude
 - `exclude_keywords` — comma-separated keywords to exclude
 

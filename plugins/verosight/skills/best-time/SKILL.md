@@ -21,6 +21,9 @@ curl -s "https://api.verosight.com/v1/analytics/best-time?platform=x&days=30" \
 - `profile_name` — analyze a specific profile's posting pattern
 - `keyword` — optional, analyze topic-specific posting times via semantic search
 - `days` — period 1-90 (default 30)
+- `media_type` — filter: image, video, text, article (photo is alias for image)
+- `exclude_profiles` — comma-separated profiles to exclude
+- `exclude_keywords` — comma-separated keywords to exclude
 
 Parse the user's request:
 - "best time to post on twitter" → platform=x

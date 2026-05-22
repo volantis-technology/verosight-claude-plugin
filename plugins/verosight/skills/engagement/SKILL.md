@@ -21,6 +21,7 @@ curl -s "https://api.verosight.com/v1/analytics/engagement-ranking?days=7&limit=
 - `limit` — max results (default 20)
 - `platform` — filter: x, instagram, tiktok, etc.
 - `keyword` — optional, filter by topic
+- `media_type` — filter: image, video, text, article (photo is alias for image)
 - `exclude_profiles` — comma-separated profiles to exclude
 - `exclude_keywords` — comma-separated keywords to exclude
 

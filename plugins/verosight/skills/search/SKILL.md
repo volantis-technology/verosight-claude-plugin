@@ -25,6 +25,7 @@ curl -s "https://api.verosight.com/v1/posts?keyword=$QUERY&limit=10" \
 - `sort` — posted_at, like_count, comment_count
 - `order` — desc (default), asc
 - `limit` — 1-100 (default 20)
+- `media_type` — filter: image, video, text, article (photo is alias for image)
 - `exclude_profiles` — comma-separated profiles to exclude
 - `exclude_keywords` — comma-separated keywords to exclude
 

@@ -21,6 +21,7 @@ curl -s "https://api.verosight.com/v1/analytics/topics?days=7&limit=10" \
 - `limit` — max results (default 20)
 - `platform` — filter: x, instagram, tiktok, facebook, linkedin, youtube, news_portal
 - `keyword` — optional, filter posts by topic before clustering
+- `media_type` — filter: image, video, text, article (photo is alias for image)
 - `exclude_profiles` — comma-separated profiles to exclude
 - `exclude_keywords` — comma-separated keywords to exclude
 

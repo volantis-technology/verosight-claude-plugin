@@ -21,6 +21,9 @@ curl -s "https://api.verosight.com/v1/analytics/hashtags?days=7&limit=10" \
 - `limit` — max results (default 20)
 - `platform` — filter: x, instagram, tiktok, etc.
 - `keyword` — optional, find hashtags in topic-relevant posts via semantic search
+- `media_type` — filter: image, video, text, article (photo is alias for image)
+- `exclude_profiles` — comma-separated profiles to exclude
+- `exclude_keywords` — comma-separated keywords to exclude
 
 Parse the user's request:
 - "trending hashtags about fashion" → keyword=fashion

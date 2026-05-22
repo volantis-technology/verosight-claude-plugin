@@ -1,7 +1,7 @@
 {
   "name": "verosight-marketplace",
   "description": "Social media intelligence plugins for Claude Code — search posts, analyze sentiment, track trends, find experts, and get AI recommendations across X, Instagram, TikTok, Facebook, LinkedIn, YouTube, and news portals.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "owner": {
     "name": "Verosight",
     "email": "hello@verosight.com"
@@ -10,8 +10,8 @@
     {
       "name": "verosight",
       "source": "./plugins/verosight",
-      "description": "Social media intelligence API with 17 skills — search posts, analyze sentiment, track trends, find experts, get AI recommendations, and compare profiles across 7+ platforms. Supports semantic keyword filtering for topic-specific analytics.",
-      "version": "2.0.0",
+      "description": "Social media intelligence API with 21 skills — search posts, semantic search, analyze sentiment, track trends, find experts, get AI recommendations, and compare profiles across 7+ platforms. Supports media type filtering and semantic keyword filtering for topic-specific analytics.",
+      "version": "2.1.0",
       "author": {
         "name": "Verosight",
         "url": "https://verosight.com"

@@ -24,7 +24,7 @@ If the key is not working, tell the user to:
 
 ## Suggest MCP setup (optional)
 
-For the best experience with all 19 tools available automatically, suggest setting up the MCP server:
+For the best experience with all 21 tools available automatically, suggest setting up the MCP server:
 
 **Remote SSE (recommended for Cursor/Windsurf):**
 ```json
